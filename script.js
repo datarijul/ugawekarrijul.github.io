@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
-        const intro = document.getElementById('intro');
-        const projects = document.getElementById('projects');
-        const introPosition = intro.getBoundingClientRect().top;
-        const projectsPosition = projects.getBoundingClientRect().top;
+        const sections = document.querySelectorAll('.intro, .projects, .footer');
         const screenPosition = window.innerHeight / 1.3;
 
-        if (introPosition < screenPosition) {
-            intro.classList.add('visible');
-        }
-        if (projectsPosition < screenPosition) {
-            projects.classList.add('visible');
-        }
+        sections.forEach(section => {
+            const sectionPosition = section.getBoundingClientRect().top;
+            if (sectionPosition < screenPosition) {
+                section.classList.add('visible');
+            }
+        });
     });
 });
