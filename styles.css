@@ -15,9 +15,9 @@ body {
 }
 
 .header .photo-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .header h1 {
-    margin: 20px 0 0 0;
+    margin: 0;
     font-size: 3.5em;
     letter-spacing: 2px;
     font-weight: bold;
@@ -40,12 +40,12 @@ body {
     font-style: italic;
 }
 
-.intro, .projects {
+.intro, .projects, .footer {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
 
-.intro.visible, .projects.visible {
+.intro.visible, .projects.visible, .footer.visible {
     opacity: 1;
 }
 
