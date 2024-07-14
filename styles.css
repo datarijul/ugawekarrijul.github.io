@@ -9,7 +9,7 @@ body {
 .header {
     background-color: #333;
     color: white;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     position: relative;
 }
@@ -17,7 +17,7 @@ body {
 .header .photo-container {
     width: 100px;
     height: 100px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -28,14 +28,14 @@ body {
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 3.5em;
+    margin: 10px 0 0 0;
+    font-size: 2.5em;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
 .header p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10px;
     font-style: italic;
 }
